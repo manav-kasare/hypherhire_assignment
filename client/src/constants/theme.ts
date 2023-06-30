@@ -31,7 +31,9 @@ export const WEIGHTS: ThemeWeights = {
   black: Platform.OS === 'ios' ? '900' : 'normal',
 };
 
-export const ICONS: ThemeIcons = {};
+export const ICONS: ThemeIcons = {
+  back: require('../assets/images/back.png'),
+};
 
 export const ASSETS: ThemeAssets = {
   // fonts

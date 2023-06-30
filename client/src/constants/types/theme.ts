@@ -207,41 +207,7 @@ export interface ThemeWeights {
   black?: TextStyle['fontWeight'];
 }
 export interface ThemeIcons {
-  apple: ImageSourcePropType;
-  google: ImageSourcePropType;
-  facebook: ImageSourcePropType;
-  arrow: ImageSourcePropType;
-  articles: ImageSourcePropType;
-  basket: ImageSourcePropType;
-  bell: ImageSourcePropType;
-  calendar: ImageSourcePropType;
-  chat: ImageSourcePropType;
-  check: ImageSourcePropType;
-  clock: ImageSourcePropType;
-  close: ImageSourcePropType;
-  components: ImageSourcePropType;
-  document: ImageSourcePropType;
-  documentation: ImageSourcePropType;
-  extras: ImageSourcePropType;
-  flight: ImageSourcePropType;
-  home: ImageSourcePropType;
-  hotel: ImageSourcePropType;
-  image: ImageSourcePropType;
-  location: ImageSourcePropType;
-  menu: ImageSourcePropType;
-  more: ImageSourcePropType;
-  notification: ImageSourcePropType;
-  office: ImageSourcePropType;
-  payment: ImageSourcePropType;
-  profile: ImageSourcePropType;
-  register: ImageSourcePropType;
-  rental: ImageSourcePropType;
-  search: ImageSourcePropType;
-  settings: ImageSourcePropType;
-  star: ImageSourcePropType;
-  train: ImageSourcePropType;
-  users: ImageSourcePropType;
-  warning: ImageSourcePropType;
+  back: ImageSourcePropType;
 }
 
 export interface ThemeAssets {
@@ -251,35 +217,11 @@ export interface ThemeAssets {
   RobotoBold?: any;
   NotoSans?: any;
 
-  logo: ImageSourcePropType;
-  header: ImageSourcePropType;
-  background: ImageSourcePropType;
+  logo?: ImageSourcePropType;
+  header?: ImageSourcePropType;
+  background?: ImageSourcePropType;
 
   coverPlaceholder: ImageSourcePropType;
-
-  card1: ImageSourcePropType;
-  card2: ImageSourcePropType;
-  card3: ImageSourcePropType;
-  card4: ImageSourcePropType;
-  card5: ImageSourcePropType;
-
-  photo1: ImageSourcePropType;
-  photo2: ImageSourcePropType;
-  photo3: ImageSourcePropType;
-  photo4: ImageSourcePropType;
-  photo5: ImageSourcePropType;
-  photo6: ImageSourcePropType;
-  carousel1: ImageSourcePropType;
-
-  avatar1: ImageSourcePropType;
-  avatar2: ImageSourcePropType;
-
-  x5: ImageSourcePropType;
-  gle: ImageSourcePropType;
-  tesla: ImageSourcePropType;
-
-  ios: ImageSourcePropType;
-  android: ImageSourcePropType;
 }
 
 export interface ThemeFonts {

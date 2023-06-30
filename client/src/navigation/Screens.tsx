@@ -1,14 +1,17 @@
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import React from 'react';
-import {Books} from '../screens';
+import {useTheme} from '../hooks';
+import {Book, Books} from '../screens';
 
 const Stack = createNativeStackNavigator();
 
 export default function Screens() {
+  const {icons} = useTheme();
   return (
     <Stack.Navigator
       screenOptions={{
         headerShadowVisible: false,
+        headerBackImageSource: icons.back,
       }}>
       <Stack.Screen
         name="Books"
@@ -20,6 +23,18 @@ export default function Screens() {
             fontWeight: '700',
           },
         }}
+      />
+      <Stack.Screen
+        name="Book"
+        component={Book}
+        options={({route: {params}}: {route: any}) => ({
+          headerTitleAlign: 'center',
+          title: params?.title,
+          headerTitleStyle: {
+            fontWeight: '700',
+          },
+          headerBackImageSource: icons.back,
+        })}
       />
     </Stack.Navigator>
   );
