@@ -1,7 +1,7 @@
 import { IConfig } from "../types";
 
 const config = {
-    PORT: process.env.PORT,
+    PORT: 5000
 } as IConfig;
 
 export default config;
