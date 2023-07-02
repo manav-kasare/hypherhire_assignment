@@ -1,7 +1,7 @@
 export type IBook = {
   id: string;
   title: string;
-  desription: string;
+  description: string;
   discount: number;
   cover: string;
   price: number;

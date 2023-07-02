@@ -1,4 +1,4 @@
-import {Dimensions, Platform} from 'react-native';
+import { Dimensions, Platform } from 'react-native';
 import {
   ICommonTheme,
   ThemeAssets,
@@ -8,7 +8,7 @@ import {
   ThemeWeights,
 } from './types';
 
-const {width, height} = Dimensions.get('window');
+const { width, height } = Dimensions.get('window');
 
 // Naming source: https://developer.mozilla.org/en-US/docs/Web/CSS/font-weight#Common_weight_name_mapping
 export const WEIGHTS: ThemeWeights = {
@@ -32,7 +32,11 @@ export const WEIGHTS: ThemeWeights = {
 };
 
 export const ICONS: ThemeIcons = {
-  back: require('../assets/images/back.png'),
+  back: require('../assets/icons/back.png'),
+  like: require('../assets/icons/like.png'),
+  comment: require('../assets/icons/comment.png'),
+  menu: require('../assets/icons/menu.png'),
+  verified: require('../assets/icons/verified.png'),
 };
 
 export const ASSETS: ThemeAssets = {
@@ -43,39 +47,9 @@ export const ASSETS: ThemeAssets = {
   RobotoBold: require('../assets/fonts/Roboto-Bold.ttf'),
   NotoSans: require('../assets/fonts/NotoSansKR-Medium.otf'),
 
-  // backgrounds/logo
-  // logo: require('../assets/images/logo.png'),
-  // header: require('../assets/images/header.png'),
-  // background: require('../assets/images/background.png'),
-  // ios: require('../assets/images/ios.png'),
-  // android: require('../assets/images/android.png'),
-
   coverPlaceholder: require('../assets/images/cover-placeholder.png'),
-
-  // // cards
-  // card1: require('../assets/images/card1.png'),
-  // card2: require('../assets/images/card2.png'),
-  // card3: require('../assets/images/card3.png'),
-  // card4: require('../assets/images/card4.png'),
-  // card5: require('../assets/images/card5.png'),
-
-  // // gallery photos
-  // photo1: require('../assets/images/photo1.png'),
-  // photo2: require('../assets/images/photo2.png'),
-  // photo3: require('../assets/images/photo3.png'),
-  // photo4: require('../assets/images/photo4.png'),
-  // photo5: require('../assets/images/photo5.png'),
-  // photo6: require('../assets/images/photo6.png'),
-  // carousel1: require('../assets/images/carousel1.png'),
-
-  // // avatars
-  // avatar1: require('../assets/images/avatar1.png'),
-  // avatar2: require('../assets/images/avatar2.png'),
-
-  // // cars
-  // x5: require('../assets/images/x5.png'),
-  // gle: require('../assets/images/gle.png'),
-  // tesla: require('../assets/images/tesla.png'),
+  user1: require('../assets/images/user1.png'),
+  user2: require('../assets/images/user2.png'),
 };
 
 export const FONTS: ThemeFonts = {
@@ -104,7 +78,7 @@ export const FONTS: ThemeFonts = {
 
 export const LINE_HEIGHTS: ThemeLineHeights = {
   // font lineHeight
-  text: 22,
+  text: 12,
   h1: 60,
   h2: 55,
   h3: 43,
@@ -115,9 +89,9 @@ export const LINE_HEIGHTS: ThemeLineHeights = {
 
 export const THEME: ICommonTheme = {
   icons: ICONS,
-  assets: {...ICONS, ...ASSETS},
+  assets: { ...ICONS, ...ASSETS },
   fonts: FONTS,
   weights: WEIGHTS,
   lines: LINE_HEIGHTS,
-  sizes: {width, height},
+  sizes: { width, height },
 };

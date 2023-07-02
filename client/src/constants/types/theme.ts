@@ -25,7 +25,7 @@ export interface ISpacing
     | 'paddingRight'
     | 'paddingTop'
     | 'paddingBottom'
-  > {}
+  > { }
 
 export type TWeight =
   /** fontWeight: 400 */
@@ -105,6 +105,8 @@ export interface ThemeColors {
   icon: ColorValue;
   blurTint: 'light' | 'dark' | 'default';
   link: ColorValue;
+  separator: ColorValue;
+  placeholder: ColorValue;
 }
 
 export interface ThemeGradients {
@@ -208,6 +210,10 @@ export interface ThemeWeights {
 }
 export interface ThemeIcons {
   back: ImageSourcePropType;
+  like: ImageSourcePropType;
+  comment: ImageSourcePropType;
+  menu: ImageSourcePropType;
+  verified: ImageSourcePropType;
 }
 
 export interface ThemeAssets {
@@ -222,6 +228,8 @@ export interface ThemeAssets {
   background?: ImageSourcePropType;
 
   coverPlaceholder: ImageSourcePropType;
+  user1: ImageSourcePropType;
+  user2: ImageSourcePropType;
 }
 
 export interface ThemeFonts {

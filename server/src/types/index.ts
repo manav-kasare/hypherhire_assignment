@@ -13,6 +13,13 @@ export type IBook = {
     price: number;
 };
 
+export type IUser = {
+    id: number;
+    username: string;
+    avatar: string;
+    verified: boolean;
+};
+
 export type IControllerArgs = {
     (
         req: Request<any, any, any, any, Record<string, any>> | any,

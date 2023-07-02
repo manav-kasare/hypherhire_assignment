@@ -6,7 +6,7 @@ import {
   ThemeSpacing,
 } from './types';
 
-import {THEME as commonTheme} from './theme';
+import { THEME as commonTheme } from './theme';
 
 export const COLORS: ThemeColors = {
   // default text color
@@ -39,7 +39,7 @@ export const COLORS: ThemeColors = {
   /** UI color for #success */
   success: '#82D616',
   /** UI color for #info */
-  info: '#17C1E8',
+  info: '#919EB6',
 
   /** UI colors for navigation & card */
   card: '#FFFFFF',
@@ -74,6 +74,10 @@ export const COLORS: ThemeColors = {
 
   /** product link color */
   link: '#CB0C9F',
+
+  separator: '#F7F8FA',
+
+  placeholder: '#AFB9CA'
 };
 
 export const GRADIENTS: ThemeGradients = {
@@ -103,7 +107,7 @@ export const SIZES: ThemeSizes = {
   base: 8,
   text: 14,
   radius: 4,
-  padding: 20,
+  padding: 16,
 
   // font sizes
   h1: 44,
@@ -139,8 +143,8 @@ export const SIZES: ThemeSizes = {
 
   // image sizes
   imageRadius: 14,
-  avatarSize: 50,
-  avatarRadius: 50 / 2,
+  avatarSize: 34,
+  avatarRadius: 34 / 2,
 
   // switch sizes
   switchWidth: 50,
@@ -184,5 +188,5 @@ export const THEME: ITheme = {
   ...commonTheme,
   colors: COLORS,
   gradients: GRADIENTS,
-  sizes: {...SIZES, ...commonTheme.sizes, ...SPACING},
+  sizes: { ...SIZES, ...commonTheme.sizes, ...SPACING },
 };
